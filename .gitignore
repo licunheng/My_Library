@@ -1,0 +1,43 @@
+# 操作系统与编辑器垃圾
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# 常见大文件临时项：未完成下载、编辑器锁文件、备份
+*.tmp
+*.temp
+*.bak
+*.orig
+*.part
+*.crdownload
+*.download
+*.partial
+~$*
+
+# 本地凭据，避免误提交
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.*
+
+# 若在本地误生成依赖或缓存，不纳入资料库
+__pycache__/
+*.pyc
+node_modules/
+.cache/
+
+# 大体积 PDF 可选用 Git LFS，本仓库不强制启用。
+# 需要时再执行 git lfs install && git lfs track "*.pdf"，并提交生成的 .gitattributes。
+# 体积不大的说明书直接用普通 Git 提交即可；不要把 PDF 写进本忽略列表。
